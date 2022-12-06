@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* HEADER */
+   header {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       height: 80px;
+     
+   }
+   header h2{
+    font-size: 25px;
+   }
+   header .left{
+    flex: 1;
+    margin: auto;
+    
+   }
+   header .middle{
+    flex: 2;
+    text-align: left;
+    margin: auto;
+   }
+   header .right{
+    flex: 3;
+    margin: auto;
+    text-align: right;
+    flex-wrap: wrap;
+    
+   }
+   a.btn {
+       color: red;
+       padding: 10px;
+       transition: all 0.2s;
+       margin-right: 10px;
+       text-decoration: none;
+       
+     }
+   a.btn:hover {
+       color: rgb(222, 195, 195);
+   }
+   main{
+    background-image:url(./heabg.jpg);
+    border: 1px solid black;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+        .content{
+            padding-left: 10px;
+            padding-bottom: 10px;
+            border: 1px solid black;
+            width: 700px;
+            background-color: white;
+            font-size: 20px;
+           display: flex;
+        }
+        button{
+            background-color: red;
+            color: white;
+            width: 150px;
+            height: 40px;
+            font-size: 16px;
+            margin-left: 500px;
+            
+
+        }
+        button{
+            background-color: red;
+            color: white;
+            width: 150px;
+            height: 40px;
+            font-size: 16px;
+            margin-left: 500px;
+            border: 1px solid black;
+
+        }
+        .csw-btn-button {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 35px;
+  color: #ffffff !important;
+  border-radius: 5px;
+  background:red;
+  border: 1px solid black;
+  margin-left: 500px;
+  padding-bottom: 10px;
+}
+.csw-btn-button:hover {
+  background: #d59292;
+}
+.container-footer{
+    display: flex;
+    /* flex-direction: row; */
+    width: 100%;
+    height: max-content;
+    background-color: #143814;
+    color: white;
+    /* padding: 20px; */
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+   
+}
+.footer{
+    margin-left: 10px;
+}
+.footer:nth-child(1){
+    flex: 1;
+   
+}
+.footer:nth-child(2){
+    flex: 1;
+}
+.footer:nth-child(3){
+    flex: 1;
+}
+.footer:nth-child(4){
+    flex: 1;
+}
+
+.footer p{
+    margin: 0;
+}
+/* Mobile: width < 740px */
+@media only screen and (max-width: 600px) {
+    
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .content {
+
+overflow: hidden;
+ width:100%;
+}
+.content button {
+background-color: red;
+border:1px;
+color: #fff;
+height: 40px;
+text-align: center;
+width: 200px;
+margin: auto;
+}
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left"><a href="#"><img src="../HinhProject/logo (1).JPG" width="190px"></a></div>
+        <!-- <div class="middle"><H2>ĐĂNG KÝ</H2></div> -->
+        <div class="right"><a href="#" class="btn">Bạn cần trợ giúp ?</a></div>
+    </header>
+    <main>
+        <div class="content">
+            <form action="../SIgnIN/signin.html" >
+                <h4>Đã xác nhận tài khoản</h4>
+                <p>Bạn đã xác nhận thành công tài khoản của bạn bằng số điện thoại 0961394532. Bạn sẽ sử dụng số điện thoại này để đăng nhập.</p>
+                <button type="submit" class="csw-btn-button" id="btn"> OK</button>
+               
+            </form>
+           </div>
+
+     </main>
+     <div class="container-footer">
+        <div class="footer">
+            <img src="../HinhProject/logo (2).JPG" width="170px">
+        </div>
+        <div class="footer">
+            <div>
+                <h4></h4>
+                <p>Số 669, Quốc lộ 1, Phường Linh Xuân, TP Thủ Đức, TPHCM</p>
+                <p>(0123)-444-555</p>
+                <p>(0123)-444-666</p>
+                <p>gofoodeatclean@gmail.com</p>
+                <p>hotrokhachhang.gofood@gmail.com</p>
+            </div> 
+        </div>
+        <div class="footer">
+            <div>
+                <h4>Điều khoản chung</h4>
+                <p>Chính sách quy định chung</p>
+                <p>Quy định hình thức thanh toán</p>
+                <p>Chính sách vận chuyển giao hàng</p>
+                <p>Chính sách bảo mật thông tin</p>
+            </div> 
+        </div>
+        <div class="footer">
+            <div>
+                <h4>Follow us:</h4>
+                <p>
+                <img src="../HinhProject/IG.webp" width="25px">
+                <img src="../HinhProject/FB.png" width="25px">
+                <img src="../HinhProject/mail.webp" width="25px">
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <hr>
+        <i>© Copyright 2022 GoFood. All rights reserved.</i>
+    </div>
+    
+</body>
+</html>

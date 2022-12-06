@@ -1,0 +1,87 @@
+[
+    {
+            "id":1,
+            "ten": "Salad ức gà",
+            "gia": 80000,
+            "hinh":"khac1.jfif"
+
+
+        },
+        {
+            "id":2,
+            "ten": "Salad bơ",
+            "gia": 80000,
+            "hinh":"khac2.jfif"
+
+        },
+        {
+            "id":3,
+            "ten": "Salad ức gà",
+            "gia": 80000,
+            "hinh":"khac3.jfif"
+
+        },
+        {
+            "id":4,
+            "ten": "Salad bơ chín",
+            "gia": 60000,
+            "hinh":"khac4.jfif"
+
+        },
+        {
+            "id":5,
+            "ten": "Salad trái cây",
+            "gia": 80000,
+            "hinh":"khac5.jfif"
+
+        },
+        {
+            "id":6,
+            "ten": "Salad bơ chín",
+            "gia": 60000,
+            "hinh":"khac6.jfif"
+
+        },
+        {
+            "id":7,
+            "ten": "Ức gà chiên",
+            "gia": 80000,
+            "hinh":"khac7.jfif"
+
+        },
+        {
+            "id":8,
+            "ten": "Ngũ cốc",
+            "gia": 60000,
+            "hinh":"khac8.jfif"
+
+        },
+        {
+            "id":9,
+            "ten": "Gạo lức và ức gà lức",
+            "gia": 60000,
+            "hinh":"khac9.jfif"
+
+        },
+        {
+            "id":10,
+            "ten": "Salad bơ và trứng",
+            "gia": 70000,
+            "hinh":"khac10.jfif"
+
+        },
+        {
+            "id":11,
+            "ten": "Salad tôm",
+            "gia": 80000,
+            "hinh":"khac11.jfif"
+
+        },
+        {
+            "id":12,
+            "ten": "Đậu xanh và trứng",
+            "gia": 60000,
+            "hinh":"khac12.jfif"
+
+        }
+    ]

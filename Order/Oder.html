@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="./oder.css">
+
+<script>
+    $(document).ready(function() {
+        $('#toggle').click(function() {
+            $('nav').slideToggle();
+        });
+    })
+</script>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+              <h2><a href="../HOME/home1.html"><img src="../HinhProject/logo (1).JPG" width="180px"></a></h2>
+              <nav>
+                <ul >
+                  <li class="search_icon">
+                      <span class="icon"><i class="fa fa-search"></i></span>
+                      <input type="search" id="search" placeholder="Search..." />
+                  </li>
+                    <li><a href="../Blog/Cart.html" class="cart"><img src="../img/cart.png" width="15px"></a></li>
+                    <li><a href="../Account/account.html" class="account"><img src="../img/acc.png" width="15px"></a></li>
+                </ul>
+              </nav>
+            </header>
+    
+        <div id="wrapper">
+            <div class="header">
+                <div id="toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul id="main-menu">
+                        <li><a href="./home1.html">TRANG CHỦ</a></li>
+                        <li><a href="../Menu/menu.html">MENU</a></li>
+                        <li><a href="../Premium/Pre.test.html">PREMINUM</a></li>
+                        <li><a href="../Blog/Page1.html">BLOG</a></li>
+                        <li><a href="../About/about1.html">ABOUT</a></li>
+                        <li><a href="../FAQS/FAQS.HTML">FAQS</a></li>
+                        <li><a href="../LIENHE/lienhe.html">LIÊN HỆ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="hid">
+                <div id="toggle1">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul id="main-menu1">
+                        <li><a href="./home1.html">TRANG CHỦ</a></li>
+                        <li><a href="../Menu/menu.html">MENU</a></li>
+                        <li><a href="../Premium/Pre.test.html">PREMINUM</a></li>
+                        <li><a href="../Blog/Page1.html">BLOG</a></li>
+                        <li><a href="../About/about1.html">ABOUT</a></li>
+                        <li><a href="../FAQS/FAQS.HTML">FAQS</a></li>
+                        <li><a href="../LIENHE/lienhe.html">LIÊN HỆ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    <div class="content">
+        <div class="left">
+            <img src="./sala.jfif"width="450px" height="300px" alt="">
+            <p><img src="./heart.png" width="20px" alt="">199(Đã thích)</p>
+        </div>
+        <div class="right">
+            <h1>Salad bơ và cá hồi</h1>
+            <p><span style="color:red ;">5</span><img src="./5stars.png" width="50px" alt=""> | 200 Đánh Giá | 220 Đã bán</p>
+            <p><b>Giá: 60.000đ</b></p>
+            <div class="vanchuyen">
+                <p>Vận chuyển</p>
+                <select>
+                    <option>Ktx khu B</option>
+                    <option>UEL</option>
+                    <option>ktx khu A</option>
+                    <option>Danh sách 03</option>
+                    </select>
+            </div>
+            <p>Phí vận chuyển</p>
+            <p>Phân loại:</p>
+            <div class="quantity">
+                <p>Số lượng:</p>
+                <input type="number" min="0" value="1" width="100px">
+            </div>
+           <a href="../Blog/Cart.html"><button class="button button1">Thêm vào giỏ hàng</button></a> 
+            <!-- <button class="button button1">Thêm vào giỏ hàng</button> -->
+            <button class="button button1">Mua ngay</button>
+        </div>
+    </div>
+    <div class="thongtin">
+        <div class="thongtintrai">
+            <p>THÔNG TIN SẢN PHẨM</p>
+           <div class="anh">
+            <img  src="./sala.jfif" alt="" width="300px" >
+            <!-- <img  src="./salad.jfif" alt="" width="300px" height="150px"> -->
+           </div>
+        </div>
+        <div class="thongtinphai">
+            <ul>
+                <li>Salad gồm cá hồi, bơ, lolo xanh,..</li>
+                <li> Đóng hộp gọn gàng, sạch sẽ và được bảo quản lạnh khép kín trong suốt quá trình vận chuyển. Đảm bảo tất cả nguyên liệu đều được nhập mới mỗi ngày. </li>
+                <li>Được thực hiện bởi đầu bếp chuyên nghiệp chuẩn Nhật, đảm bảo tươi ngon từng miếng.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="danhgia">
+        
+        <div class="sao">
+            <p>ĐÁNH GIÁ SẢN PHẨM</p>
+                <p style=" color:red"><span style="font-size:20px ; padding-left: 20px;">5</span> trên 5</p>
+                <img src="./5stars.png" alt="" width="100px">
+        </div>
+        <div class="danhgiaphai">
+            <div ><a href="#"> Tất cả</a></div>
+            <div ><a href="#">5 Sao(150)</a></div>
+            <div><a href="#">4 Sao(40)</a></div>
+            <div><a href="#">3 Sao(10)</a></div>
+            <div><a href="#"> 2 Sao(0)</a></div>
+            <div><a href="#">Có Hình Ảnh(34)</a> </div>
+            <div><a href="#">Có Bình Luận(50)</a></div>
+        </div>
+        
+    </div>
+    <hr>
+    <div class="accounttren">
+        <div class="accounttrai">
+            <img src="./account.jpg" alt="" width="80px">
+
+        </div>
+        <div class="accountphai">
+            <p>huonglyly<br></p>
+            <img src="./5stars.png" alt="" width="100px">
+            <p>2022-06-21 19:29 | Phân loại hàng: Salad</p>
+            <p>Ngon, chất lượng, giá hợp lý</p>
+            <p><img src="./sala.jfif" alt=""><img src="./sala.jfif" alt=""></p>
+        </div>
+    </div>
+    <hr>
+    <div class="accountduoi">
+        <div class="accounttraiduoi">
+            <img src="./account.jpg" alt="" width="80px">
+        </div>
+        <div class="accountphaiduoi">
+            <p>huonglyly<br></p>
+            <img src="./5stars.png" alt="" width="100px">
+            <p>2022-06-21 19:29 | Phân loại hàng: Salad</p>
+            <p>Ngon, chất lượng, giá hợp lý</p>
+            <p><img src="./sala.jfif" alt=""><img src="./sala.jfif" alt=""></p>
+        </div>
+    </div>
+   <hr>
+   <div class="CACMON">
+    <P>CÁC MÓN KHÁC</P>
+    <div class="cacmonkhac" id="cacmonkhac">
+    </div>
+   </div>
+   <script>
+    let a= []
+    fetch("sanpham.json")
+    .then(res=> res.json())
+    .then(json=> {
+        document.getElementById("cacmonkhac").innerHTML= json.map(item => `
+         <div onclick="getInfo(${item.id})" class="main-item">
+            <img class="main-item-img" src='image/${item.hinh}' />
+            <div class="main-item-name">${item.ten}</div>
+            <div class="main-item-name sp-1">Giá :${item.gia}đ</div>    
+        </div>
+        `).join("")
+        a= json
+    })
+</script>
+    
+    <div class="btn3" >
+        <button class="button3" > Xem Thêm</button>
+    </div>
+
+   </div>
+   <div class="container-footer">
+    <div class="footer">
+        <img src="../HinhProject/logo (2).JPG" width="170px">
+    </div>
+    <div class="footer">
+        <div>
+            <h4></h4>
+            <p>Số 669, Quốc lộ 1, Phường Linh Xuân, TP Thủ Đức, TPHCM</p>
+            <p>(0123)-444-555</p>
+            <p>(0123)-444-666</p>
+            <p>gofoodeatclean@gmail.com</p>
+            <p>hotrokhachhang.gofood@gmail.com</p>
+        </div> 
+    </div>
+    <div class="footer">
+        <div>
+            <h4>Điều khoản chung</h4>
+            <p>Chính sách quy định chung</p>
+            <p>Quy định hình thức thanh toán</p>
+            <p>Chính sách vận chuyển giao hàng</p>
+            <p>Chính sách bảo mật thông tin</p>
+        </div> 
+    </div>
+    <div class="footer">
+        <div>
+            <h4>Follow us:</h4>
+            <p>
+            <img src="../HinhProject/IG.webp" width="25px">
+            <img src="../HinhProject/FB.png" width="25px">
+            <img src="../HinhProject/mail.webp" width="25px">
+            </p>
+        </div>
+    </div>
+</div>
+<div>
+    <hr>
+    <i>© Copyright 2022 GoFood. All rights reserved.</i>
+</div>
+
+
+   
+
+</body>
+
+</html>

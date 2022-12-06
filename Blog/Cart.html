@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $("#toggle").click(function () {
+          $("nav").slideToggle();
+        });
+      });
+    </script>
+    <div class="box">
+      <header>
+        <h2>
+          <a href="#"
+            ><img src="./Hinh/Logo.JPG" width="180px" style="margin-left: 15px"
+          /></a>
+        </h2>
+        <nav>
+          <ul>
+            <li class="search_icon">
+              <span class="icon"><i class="fa fa-search"></i></span>
+              <input type="search" id="search" placeholder="Search..." />
+            </li>
+            <li><a href="../Blog/Cart.html" class="cart"><img src="../img/cart.png" width="15px"></a></li>
+            <li><a href="../Account/account.html" class="account"><img src="../img/acc.png" width="15px"></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="wrapper">
+        <div class="header">
+          <div id="toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <nav>
+            <ul id="main-menu">
+              <li><a href="./home1.html">TRANG CHỦ</a></li>
+              <li><a href="../Menu/menu.html">MENU</a></li>
+              <li><a href="../Premium/Pre.test.html">PREMINUM</a></li>
+              <li><a href="../Blog/Page1.html">BLOG</a></li>
+              <li><a href="../About/about1.html">ABOUT</a></li>
+              <li><a href="../FAQS/FAQS.HTML">FAQS</a></li>
+              <li><a href="../LIENHE/lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="hid">
+          <div id="toggle1">
+            <i class="fas fa-bars"></i>
+          </div>
+          <nav>
+            <ul id="main-menu1">
+              <li><a href="./home1.html">TRANG CHỦ</a></li>
+              <li><a href="../Menu/menu.html">MENU</a></li>
+              <li><a href="../Premium/Pre.test.html">PREMINUM</a></li>
+              <li><a href="../Blog/Page1.html">BLOG</a></li>
+              <li><a href="../About/about1.html">ABOUT</a></li>
+              <li><a href="../FAQS/FAQS.HTML">FAQS</a></li>
+              <li><a href="../LIENHE/lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="site-header">
+      <div class="container">
+        <h1>GIỎ HÀNG</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div id="cart">
+        <div class="cart-items">
+          <div class="product">
+            <div class="cart-item cart-column">
+              <header>
+                <a class="remove">
+                  <img src="./Hinh/salad.png" alt="" />
+
+                  <h3>Remove product</h3>
+                </a>
+              </header>
+              <div class="content">
+                <h1>Salad bơ và cá hồi</h1>
+              </div>
+              <footer class="content">
+                <input class="cart-quantity-input" type="number" value="1" />
+                <h2 class="full-price">60000</h2>
+              </footer>
+            </div>
+          </div>
+          <div class="product">
+            <div class="cart-item cart-column">
+              <header>
+                <a class="remove">
+                  <img src="./Hinh/salad.png" alt="" />
+
+                  <h3>Remove product</h3>
+                </a>
+              </header>
+              <div class="content">
+                <h1>Salad bơ và cá hồi</h1>
+              </div>
+              <footer class="content">
+                <input class="cart-quantity-input" type="number" value="1" />
+                <h2 class="full-price">60000</h2>
+              </footer>
+            </div>
+          </div>
+          <div class="product">
+            <div class="cart-item cart-column">
+              <header>
+                <a class="remove">
+                  <img src="./Hinh/salad.png" alt="" />
+
+                  <h3>Remove product</h3>
+                </a>
+              </header>
+              <div class="content">
+                <h1>Salad bơ và cá hồi</h1>
+              </div>
+              <footer class="content">
+                <input class="cart-quantity-input" type="number" value="1" />
+                <h2 class="full-price">60000</h2>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="site-footer">
+      <div class="left">
+        <h2 class="subtotal">
+          Tạm tính: <span class="tamTinh">180 000</span> đ
+        </h2>
+        <h3 class="tax">Thuế (5%): <span class="thue">9 000</span> đ</h3>
+        <h3 class="shipping">Shipping: <span class="ship">20 000</span> đ</h3>
+      </div>
+
+      <div class="right">
+        <h1>Tổng cộng: <span class="total-price">209 000</span>đ</h1>
+        <a class="btn" href="./Payment.html">Thanh toán</a>
+      </div>
+    </div>
+    <div class="container-footer">
+      <div class="footer">
+        <img src="./Hinh/logo (2).JPG" width="170px" />
+      </div>
+      <div class="footer">
+        <div>
+          <h4></h4>
+          <p>Số 669, Quốc lộ 1, Phường Linh Xuân, TP Thủ Đức, TPHCM</p>
+          <p>(0123)-444-555</p>
+          <p>(0123)-444-666</p>
+          <p>gofoodeatclean@gmail.com</p>
+          <p>hotrokhachhang.gofood@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          <h4>Điều khoản chung</h4>
+          <p>Chính sách quy định chung</p>
+          <p>Quy định hình thức thanh toán</p>
+          <p>Chính sách vận chuyển giao hàng</p>
+          <p>Chính sách bảo mật thông tin</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          <h4>Follow us:</h4>
+          <p>
+            <img src="./Hinh/IG.webp" width="25px" />
+            <img src="./Hinh/FB.png" width="25px" />
+            <img src="./Hinh/mail.webp" width="25px" />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <hr />
+      <i>© Copyright 2022 GoFood. All rights reserved.</i>
+    </div>
+
+    <script>
+      // xóa cart
+      var remove_cart = document.getElementsByClassName("remove");
+      for (var i = 0; i < remove_cart.length; i++) {
+        var button = remove_cart[i];
+        button.addEventListener("click", function () {
+          var button_remove = event.target;
+          button_remove.parentElement.parentElement.parentElement.parentElement.remove();
+        });
+      }
+      // update cart
+      // function updatecart() {
+      //   var cart_item = document.getElementsByClassName("cart-items")[0];
+      //   var cart_rows = cart_item.getElementsByClassName(
+      //     "cart-item cart-column"
+      //   );
+      //   var total = 0;
+      //   var tax = 0;
+      //   var ship = document.getElementsByClassName("ship");
+      //   var sum = 0;
+      //   for (var i = 0; i < cart_rows.length; i++) {
+      //     var cart_row = cart_rows[i];
+      //     var price_item = cart_row.getElementsByClassName("full-price")[0];
+      //     var quantity_item = cart_row.getElementsByClassName(
+      //       "cart-quantity-input"
+      //     )[0];
+      //     var price = parseFloat(price_item.innerText); // chuyển một chuổi string sang number để tính tổng tiền.
+      //     var quantity = quantity_item.value; // lấy giá trị trong thẻ input
+      //     total = total + price * quantity;
+      //     Tax = (total * 5) / 100;
+      //     sum = total + Tax + ship;
+      //   }
+      //   document.getElementsByClassName("tamTinh")[0].innerHTML = total + " ";
+      //   document.getElementsByClassName("thue")[0].innerHTML = Tax + " ";
+      //   document.getElementsByClassName("total-price")[0].innerText = sum;
+      // update cart
+      function updatecart() {
+        var cart_item = document.getElementsByClassName("cart-items")[0];
+        var cart_rows = cart_item.getElementsByClassName(
+          "cart-item cart-column"
+        );
+        var total = 0;
+        var tax = 0;
+        var ship = parseFloat(
+          document.getElementsByClassName("ship")[0].innerText
+        );
+        var sum = 0;
+        for (var i = 0; i < cart_rows.length; i++) {
+          var cart_row = cart_rows[i];
+          var price_item = cart_row.getElementsByClassName("full-price")[0];
+          var quantity_item = cart_row.getElementsByClassName(
+            "cart-quantity-input"
+          )[0];
+          var price = parseFloat(price_item.innerText); // chuyển một chuổi string sang number để tính tổng tiền.
+          var quantity = quantity_item.value; // lấy giá trị trong thẻ input
+          total = total + price * quantity;
+          Tax = (total * 5) / 100;
+          sum = total + Tax + ship;
+        }
+        document.getElementsByClassName("tamTinh")[0].innerHTML = total + " ";
+        document.getElementsByClassName("thue")[0].innerHTML = Tax + " ";
+        document.getElementsByClassName("total-price")[0].innerText = sum;
+
+        // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
+      }
+
+        // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
+      
+      // thay đổi số lượng sản phẩm
+      var quantity_input = document.getElementsByClassName(
+        "cart-quantity-input"
+      );
+      for (var i = 0; i < quantity_input.length; i++) {
+        var input = quantity_input[i];
+        input.addEventListener("change", function (event) {
+          var input = event.target;
+          if (isNaN(input.value) || input.value <= 0) {
+            input.value = 1;
+          }
+          updatecart();
+        });
+      }
+    </script>
+  </body>
+</html>

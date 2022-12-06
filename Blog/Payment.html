@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Payment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $("#toggle").click(function () {
+          $("nav").slideToggle();
+        });
+      });
+    </script>
+    <div class="box">
+      <header>
+        <h2>
+          <a href="../HOME/home1.html"
+            ><img src="./Hinh/Logo.JPG" width="180px" style="margin-left: 15px"
+          /></a>
+        </h2>
+        <nav>
+          <ul>
+            <li class="search_icon">
+              <span class="icon"><i class="fa fa-search"></i></span>
+              <input type="search" id="search" placeholder="Search..." />
+            </li>
+            <li><a href="../Blog/Cart.html" class="cart"><img src="../img/cart.png" width="15px"></a></li>
+            <li><a href="../Account/account.html" class="account"><img src="../img/acc.png" width="15px"></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="wrapper">
+        <div class="header">
+          <div id="toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <nav>
+            <ul id="main-menu">
+              <li><a href="./home1.html">TRANG CHỦ</a></li>
+              <li><a href="../Menu/menu.html">MENU</a></li>
+              <li><a href="../Premium/Pre.test.html">PREMINUM</a></li>
+              <li><a href="../Blog/Page1.html">BLOG</a></li>
+              <li><a href="../About/about1.html">ABOUT</a></li>
+              <li><a href="../FAQS/FAQS.HTML">FAQS</a></li>
+              <li><a href="../LIENHE/lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="hid">
+          <div id="toggle1">
+            <i class="fas fa-bars"></i>
+          </div>
+          <nav>
+            <ul id="main-menu1">
+              <li><a href="./home1.html">TRANG CHỦ</a></li>
+              <li><a href="../Menu/menu.html">MENU</a></li>
+              <li><a href="../Premium/Pre.test.html">PREMINUM</a></li>
+              <li><a href="../Blog/Page1.html">BLOG</a></li>
+              <li><a href="../About/about1.html">ABOUT</a></li>
+              <li><a href="../FAQS/FAQS.HTML">FAQS</a></li>
+              <li><a href="../LIENHE/lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <h1>Trang thanh toán</h1>
+    <div class="tab_container">
+      <h2 class="payment-title">Chọn phương thức thanh toán</h2>
+      <form action="" method="post">
+        <div class="pymt-radio">
+          <div class="row-payment-method payment-row-1">
+            <div class="select-icon">
+              <input type="radio" id="radio1" name="radios" value="pp" />
+              <label for="radio1"></label>
+            </div>
+            <div class="select-txt">
+              <p class="pymt-type-name">Thanh toán khi nhận hàng</p>
+            </div>
+            <div class="select-logo">
+              <img
+                src="./Hinh/cash.png"
+                alt="PayPal"
+                width="50px"
+                height="45px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="pymt-radio">
+          <div class="row-payment-method payment-row-2">
+            <div class="select-icon hr">
+              <input
+                type="radio"
+                id="radio2"
+                name="radios"
+                value="pp"
+                checked
+              />
+              <label for="radio2"></label>
+            </div>
+            <div class="select-txt hr">
+              <p class="pymt-type-name">Thẻ ATM nội địa / Internet Banking</p>
+            </div>
+            <div class="select-logo">
+              <img
+                src="./Hinh/credit-card-emoji.png"
+                alt="credit-card"
+                width="50px"
+                height="45px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-cc">
+          <div class="row-cc">
+            <div class="cc-field">
+              <div class="cc-title">Số thẻ</div>
+              <input
+                type="text"
+                class="input cc-txt text-validated"
+                value="4542 9931 9292 2293"
+              />
+            </div>
+          </div>
+          <div class="row-cc">
+            <div class="cc-field">
+              <div class="cc-title">Hiệu lực thẻ</div>
+              <select class="input cc-ddl">
+                <option selected>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+              <select class="input cc-ddl">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option selected>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
+            </div>
+            <div class="cc-field">
+              <div class="cc-title">
+                CVV Code<span class="numberCircle">?</span>
+              </div>
+              <input type="text" class="input cc-txt" />
+            </div>
+          </div>
+          <div class="row-cc">
+            <div class="cc-field">
+              <div class="cc-title">Tên chủ thẻ</div>
+              <input type="text" class="input cc-txt" />
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <div class="button-container">
+            <a href="./Cart.html">Tiếp tục mua sắm</a>
+          </div>
+          <div class="button-container button-finish">
+            <a href="#"> Thanh toán </a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container-footer">
+      <div class="footer">
+        <img src="./Hinh/logo (2).JPG" width="170px" />
+      </div>
+      <div class="footer">
+        <div>
+          <h4></h4>
+          <p>Số 669, Quốc lộ 1, Phường Linh Xuân, TP Thủ Đức, TPHCM</p>
+          <p>(0123)-444-555</p>
+          <p>(0123)-444-666</p>
+          <p>gofoodeatclean@gmail.com</p>
+          <p>hotrokhachhang.gofood@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          <h4>Điều khoản chung</h4>
+          <p>Chính sách quy định chung</p>
+          <p>Quy định hình thức thanh toán</p>
+          <p>Chính sách vận chuyển giao hàng</p>
+          <p>Chính sách bảo mật thông tin</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          <h4>Follow us:</h4>
+          <p>
+            <img src="./Hinh/IG.webp" width="25px" />
+            <img src="./Hinh/FB.png" width="25px" />
+            <img src="./Hinh/mail.webp" width="25px" />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <hr />
+      <i>© Copyright 2022 GoFood. All rights reserved.</i>
+    </div>
+  </body>
+</html>
